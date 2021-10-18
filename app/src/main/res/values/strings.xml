@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Desert Shop</string>
+    <string name="text_intro">Deeserts Shop App</string>
+    <string name="donuts">Donut istimewa dengan berbagai anek topping, kue yang lembut dan manis</string>
+    <string name="froyo">Donut istimewa dengan berbagai anek topping, kue yang lembut dan manis</string>
+    <string name="icecream">Donut istimewa dengan berbagai anek topping, kue yang lembut dan manis</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="choose_delivery_method">Choose a delivery method:</string>
+    <string name="same_day_messenger_service">Same day messenger service</string>
+    <string name="next_day_ground_delivery">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
+    <string name="chosen">"Chosen: "</string>
+    <string name="nothing_clicked">onRadioButtonClicked: Nothing clicked.</string>
+    <string name="action_contact">Contact</string>
+    <string name="action_order">Order</string>
+    <string name="action_status">Status</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Seetting</string>
+    <string name="nameEd">"Name : "</string>
+    <string name="addressEd">Address</string>
+    <string name="phoneEd">Phone</string>
+    <string name="noteEd">Note</string>
+</resources>

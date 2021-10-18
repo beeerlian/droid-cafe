@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_regular"
+    android:paddingLeft="@dimen/margin_regular"
+    android:paddingRight="@dimen/margin_regular"
+    android:paddingTop="@dimen/margin_regular"
+    tools:context="com.example.desertshop.OrderActivity">
+
+    <LinearLayout
+        android:id="@+id/nameLinear"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/labelnameEd"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_regular"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:text="@string/nameEd"
+            android:textSize="@dimen/text_heading" />
+        <EditText
+            android:id="@+id/nameEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addressLinear"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/nameLinear"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/labeladdressEd"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_regular"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:text="@string/addressEd"
+            android:textSize="@dimen/text_heading" />
+        <EditText
+            android:id="@+id/addressEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:minHeight="120px"
+            android:maxLines="8"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/phoneLinear"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/addressLinear"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/labelphoneEd"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_regular"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:text="@string/phoneEd"
+            android:textSize="@dimen/text_heading" />
+        <EditText
+            android:id="@+id/phoneEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/noteLinear"
+        android:layout_below="@+id/phoneLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/labelnoteEd"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_regular"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:text="@string/noteEd"
+            android:textSize="@dimen/text_heading" />
+        <EditText
+            android:id="@+id/noteEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:minHeight="120px"
+            android:maxLines="5"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/order_intro_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteLinear"
+        android:layout_marginBottom="@dimen/margin_regular"
+        android:layout_marginTop="@dimen/margin_regular"
+        android:text="@string/choose_delivery_method"
+        android:textSize="@dimen/text_heading" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/order_intro_text">
+
+        <RadioButton
+            android:id="@+id/sameday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/same_day_messenger_service" />
+
+        <RadioButton
+            android:id="@+id/nextday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/next_day_ground_delivery" />
+
+        <RadioButton
+            android:id="@+id/pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pick_up" />
+    </RadioGroup>
+
+</RelativeLayout>
